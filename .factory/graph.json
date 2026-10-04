@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "id": "slugify", "station": "build", "role": "builder", "dependsOn": [], "dependencySet": ["src/**"] },
+    { "id": "slugify-review", "station": "review", "role": "reviewer", "dependsOn": ["slugify"], "dependencySet": ["src/**", "test/**", ".factory/**"] }
+  ]
+}

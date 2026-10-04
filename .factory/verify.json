@@ -1,0 +1,6 @@
+{
+  "checks": [
+    { "id": "typecheck", "kind": "typecheck", "command": ["node", "node_modules/typescript/bin/tsc", "--noEmit"], "required": true, "timeoutMs": 120000 },
+    { "id": "unit", "kind": "unit", "command": ["node", "node_modules/vitest/vitest.mjs", "run"], "required": true, "timeoutMs": 120000, "expectedSuiteCount": 2 }
+  ]
+}
